@@ -1,0 +1,30 @@
+{
+  "name": "meggle.github.com",
+  "version": "1.0.0",
+  "description": "its me site on git hub dot com",
+  "main": "index.html",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meggle/meggle.github.com.git"
+  },
+  "keywords": [
+    "personal",
+    "page"
+  ],
+  "author": "meggle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meggle/meggle.github.com/issues"
+  },
+  "homepage": "https://github.com/meggle/meggle.github.com#readme"
+}
