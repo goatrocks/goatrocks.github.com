@@ -1,3 +1,6 @@
+@import 'reset';
+@import 'transitions';
+
 body{
   background:black;
   font-family: 'Inconsolata', sans-serif;
@@ -53,4 +56,16 @@ body{
   overflow:hidden;
   clip:rect(0,900px,0,0); 
   animation:noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+.bigcat img{
+ width: 21px;
+ height: 25px;
+ @include transition(all 10s ease);
+}
+
+.bigcat img:hover{
+  width:90vh;
+  height:90vh;
+  transform: rotate(180deg);
 }
