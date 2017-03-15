@@ -29,8 +29,8 @@ body{
   $steps:50;
   @for $i from 0 through $steps{
     #{percentage($i*(1/$steps))}{
-       -webkit-filter: saturate(random(100));
-        filter:hue-rotate(random(200)-100+deg) saturate(random(200)-100);
+         -webkit-filter: hue-rotate(random(350)+deg) saturate(random(50)) drop-shadow(random(20)+px random(20)+px random(20)+px #fff);
+        filter:hue-rotate(random(350)+deg) saturate(random(50)) drop-shadow(random(20)+px random(20)+px random(20)+px #fff);
 
     }
   }
@@ -44,7 +44,7 @@ body{
   top:0;
   color:white;
   background:black;
-  clip:rect(0,900px,0,0); 
+  clip:rect(0,90vw,0,0); 
   animation:noise-anim 2s infinite linear alternate-reverse;
 }
 
@@ -56,6 +56,7 @@ body{
     }
   }
 }
+
 .glitch:before{
   content:attr(data-text);
   position:absolute;
@@ -64,7 +65,7 @@ body{
   top:0;
   color:white;
   background:black;
-  clip:rect(0,900px,0,0); 
+  clip:rect(0,90vw,0,0); 
   animation:noise-anim-2 3s infinite linear alternate-reverse;
 }
 
@@ -81,10 +82,18 @@ body{
 }
 
 .glitchimg img:hover{
-   animation:img-noise-anim 5s infinite ease-out alternate-reverse;
+   animation:img-noise-anim 10s infinite linear alternate-reverse;
 }
 
 .smallcat {
-
   background: url(./assets/happycat.gif)
+}
+
+.stopDownloadin {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  position: relative;
+  right: 10px;
+  top:10px;
+  transform: rotate(45deg);
+  color:#fff;
 }
