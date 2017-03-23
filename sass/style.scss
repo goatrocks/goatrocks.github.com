@@ -97,3 +97,24 @@ body{
   transform: rotate(45deg);
   color:#fff;
 }
+.flip-container { 
+  width: 200px;
+  height: 260px;
+  position: relative;
+  perspective: 800px;
+}
+
+
+
+@keyframes flip-anim{
+  0% {
+     transform: rotateY(0deg) rotateX(0deg);
+  }
+  100%{
+    transform: rotateY(-360deg) rotateX(-360deg);
+  }
+}
+
+#flipCat{
+  animation: flip-anim 3s infinite linear;
+}
